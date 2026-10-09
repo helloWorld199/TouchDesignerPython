@@ -27,7 +27,7 @@ def glitch(event,x,y,flags,param):
             cv.imshow("image", RB)
         calls = calls + 1
 
-img = cv.imread('casa.jpeg')
+img = cv.imread('Experiments/casa.jpeg')
 Z = np.zeros(img.shape[:2])
 Rout = np.stack((img[:,:,0],Z,Z), axis = -1)
 Gout = np.stack((Z,img[:,:,1],Z), axis = -1)
